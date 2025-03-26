@@ -28,7 +28,6 @@ async def chat_completion(request: ChatRequest):
         # Realizamos la llamada a la API con el cliente OpenAI
         response = client.responses.create(
             model="gpt-4o-mini",
-            instructions="You are a helpful assistant.",  # Se puede poner un contexto general
             input=full_prompt  # El prompt combinado (contexto + pregunta)
         )
 
